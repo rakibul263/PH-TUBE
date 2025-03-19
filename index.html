@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH TUBE</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-</head>
-<body class="container mx-auto">
-    <header>
-        <nav class="container mx-auto flex justify-between border-b-1 border-[#17171720] py-3">
-            <div class="logo">
-                <img class="w-[120px]" src="Logo.png" alt="logo">
-            </div>
-            <div class="sort">
-                <button class="btn border-none bg-gray-200">Sort by view</button>
-            </div>
-            <div class="blogs">
-                <button class="btn bg-[#FF1F3D] text-white">Blog</button>
-            </div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PH TUBE</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body class="container mx-auto">
+        <header>
+            <nav class="container mx-auto flex justify-between border-b-1 border-[#17171720] py-3">
+                <div class="logo">
+                    <img class="w-[120px]" src="Logo.png" alt="logo">
+                </div>
+                <div class="sort">
+                    <button class="btn border-none bg-gray-200">Sort by view</button>
+                </div>
+                <div class="blogs">
+                    <button class="btn bg-[#FF1F3D] text-white">Blog</button>
+                </div>
+            </nav>
+        </header>
+
+        <nav id="category-container" class="flex py-5 justify-center gap-5">
+            <button class="btn btn-small bg-[#FF1F3D] text-white" onclick="loadVideos()">All</button>
+
         </nav>
-    </header>
 
-    <nav id="category-container" class="flex py-5 justify-center gap-5">
-        <button class="btn btn-small bg-[#FF1F3D] text-white">All</button>
-        
-    </nav>
-    
+        <section id="video-container" class="container mx-auto grid grid-cols-4 gap-5">
+            
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="script/index.js"></script>
-</body>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="script/index.js"></script>
+    </body>
+
 </html>
